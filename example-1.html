@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+  <head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700" rel="stylesheet">
+  </head>
+  <body>
+    <!-- html elements -->
+   <div>
+    <p class="amounts">
+      <label for="amount">Bill</label>
+      <input id="amount" type="number" value="0.00">
+    </p>
+    
+    <p class="amounts">
+      <label for="percent">Tip</label>
+      <input id="percent" type="number" value="15">
+    </p>
+    
+    <button id="calculate">Calculate</button>
+    
+    <p class="totals">
+      <span>Tip:</span>
+      <span id="tip">0.00</span>
+    </p>
+    
+    <p class="totals">
+      <span>Total:</span>
+      <span id="total">0.00</span>
+    </p>
+  </div>
+  <style type="text/css">
+    div {
+      width: 200px;
+      height: 250px;
+      margin: auto;
+      border: solid grey 2px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: Work Sans;
+    }
+    .amounts {
+      display: flex;
+      flex-direction: column;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-bottom: 0;
+      font-weight: 700;
+    }
+    .totals {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-weight: 300;
+    }
+
+    button {
+      width:90%;
+      height: 30px;
+      margin: auto;
+      margin-top:10px;
+      font-family: Work Sans;
+      font-weight: 400;
+    }
+
+    input {
+      border: solid grey 1px;
+      border-radius: 5px;
+      height: 50px;
+      text-align: center;
+    }
+    label {
+      padding-bottom: 5px;
+    }
+
+  </style>
+    
+    <!-- Scripts -->
+    <script src="main.js"></script>
+  </body>
+</html>
